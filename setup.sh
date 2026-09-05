@@ -513,7 +513,7 @@ JWT_SECRET=${gen_jwt_secret}
 DB_HOST=db
 DB_PORT=5432
 DB_USER=vikunja
-DB_PASSWORD=${gen_db_password}
+DB_PASSWORD=testpass
 DB_NAME=vikunja
 DB_MEM_LIMIT=512m
 DB_CPUS=0.5
@@ -534,7 +534,7 @@ set -a
 # shellcheck disable=SC1090
 . "$ENV_FILE"
 set +a
-
+exit 1
 # ---------------------------------------------------------------------------
 # 5. Сборка и запуск контейнеров
 # ---------------------------------------------------------------------------
