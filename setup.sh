@@ -316,6 +316,7 @@ VALUES
      'bob@example.com', 0, false, true, false, false, true, '09:00',
      1, 'en', 'UTC', now(), now());
 
+UPDATE users SET issuer = 'local', subject = NULL, avatar_provider = 'initials';
 
 -- ------------------------------------------------------------
 -- Проекты
